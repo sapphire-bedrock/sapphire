@@ -1,0 +1,11 @@
+max_width = 100
+tab_spaces = 4
+hard_tabs = false
+newline_style = "Unix"
+
+# Struct and match formatting
+struct_lit_width = 40
+chain_width = 60
+
+# Edition
+edition = "2024"
