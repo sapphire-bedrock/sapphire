@@ -4,3 +4,4 @@ members = ["crates/sapphire"]
 default-members = ["crates/sapphire"]
 
 [workspace.dependencies]
+tokio = { version = "1.45.0", features = ["full"] }
