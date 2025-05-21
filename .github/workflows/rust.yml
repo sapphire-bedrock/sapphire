@@ -15,10 +15,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Rust (stable)
-        uses: actions/setup-rust@v1
+      - name: Install Rust (stable)
+        uses: actions-rs/toolchain@v1
         with:
-          rust-version: stable
+          toolchain: stable
+          override: true
+          components: clippy, rustfmt
 
       - name: Cache Cargo
         uses: actions/cache@v4
@@ -32,7 +34,7 @@ jobs:
       - name: Format check
         run: cargo fmt --all --check
 
-      - name: Lint with Clippy
+      - name: Clippy check
         run: cargo clippy --workspace --all-targets --all-features -- -D warnings
 
       - name: Run tests
