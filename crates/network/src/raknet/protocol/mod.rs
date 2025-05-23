@@ -1,13 +1,8 @@
-macro_rules! export_all {
-    ($($name:ident),* $(,)?) => {
-        $(
-            pub mod $name;
-            pub use $name::*;
-        )*
-    };
-}
+pub mod unconnected_ping;
+pub mod unconnected_pong;
 
-export_all!(unconnected_ping, unconnected_pong);
+pub use unconnected_ping::UnconnectedPing;
+pub use unconnected_pong::UnconnectedPong;
 
 pub const ID_CONNECTED_PING: u8 = 0x00;
 pub const ID_UNCONNECTED_PING: u8 = 0x01;
