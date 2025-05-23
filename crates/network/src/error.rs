@@ -4,7 +4,7 @@ use thiserror::Error;
 pub enum NetworkError {
     #[error("Custom error: {0}")]
     Custom(String),
-    
+
     #[error(transparent)]
     Io(#[from] std::io::Error),
 }

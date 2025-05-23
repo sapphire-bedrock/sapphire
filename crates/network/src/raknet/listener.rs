@@ -42,7 +42,7 @@ impl Listener {
         }
 
         let packet_id = data[0];
-        
+
         tracing::info!("Handling packet: {:?}", packet_id);
 
         let response = match packet_id {
@@ -58,7 +58,7 @@ impl Listener {
     }
 
     async fn handle_unconnected_ping(&self, data: &[u8]) -> Result<Bytes> {
-        let mut cursor = BytesMut::from(&data[..]);
+        let mut cursor = BytesMut::from(data);
         let _id = cursor.get_u8();
         let ping = UnconnectedPing::deserialize(&mut cursor)?;
 
