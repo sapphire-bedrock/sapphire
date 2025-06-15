@@ -8,4 +8,4 @@
 
 ## Reporting a Vulnerability
 
-Check (CONTRIBUITING)[CONTRIBUITING.md]
+Check [CONTRIBUITING.md]
