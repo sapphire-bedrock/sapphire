@@ -53,12 +53,12 @@ If you find a bug, please open an issue and include:
 
 ## Project Setup
 
-# Install dependencies
+### Install dependencies
 ```shell
 cargo build
 ```
 
-# Run the project
+### Run the project
 ```shell
 cargo run
 ```
