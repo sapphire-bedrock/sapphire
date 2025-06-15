@@ -3,39 +3,38 @@
 Thank you for considering contributing to this project! We welcome contributions of all kinds, including bug reports, feature requests, documentation updates, and code improvements.
 
 ## How to Contribute
+**1. Fork the Repository**
+Click the Fork button at the top right of this page to create your own copy of this repository.
 
-> **1. Fork the Repository**
-> Click the Fork button at the top right of this page to create your own copy of this repository.
-
-> **2.Clone Your Fork**
-```bash
+**2. Clone Your Fork**
+```shell
 git clone https://github.com/sapphire-bedrock/sapphire.git
 cd sapphire
 ```
 
-> **3. Create a Branch**
-> Always create a new branch for your work:
-```bash
+**3. Create a Branch**
+Always create a new branch for your work:
+```shell
 git checkout -b your-feature-or-fix
 ```
 
-> **4. Make Your Changes**
-> Make your changes, following our coding style and guidelines.
+**4. Make Your Changes**
+Make your changes, following our coding style and guidelines.
 
-> **5. Commit Your Changes**
-> Write clear and descriptive commit messages:
-```bash
+**5. Commit Your Changes**
+Write clear and descriptive commit messages:
+```shell
 git add .
 git commit -m "Add feature: [brief description]"
 ```
 
-> **6. Push Your Changes**
-```bash
+**6. Push Your Changes**
+```shell
 git push origin your-feature-or-fix
 ```
 
-> **7. Open a Pull Request**
-> Go to your fork on GitHub and click New Pull Request.
+**7. Open a Pull Request**
+Go to your fork on GitHub and click New Pull Request.
 
 ## Contribution Guidelines
 
@@ -55,12 +54,12 @@ If you find a bug, please open an issue and include:
 ## Project Setup
 
 # Install dependencies
-```bash
+```shell
 cargo build
 ```
 
 # Run the project
-```bash
+```shell
 cargo run
 ```
 
